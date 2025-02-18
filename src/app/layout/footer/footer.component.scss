@@ -1,0 +1,59 @@
+.wrapper {
+  height: auto;
+  padding: 0.1px;
+  width: 100%;
+
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #F4E9CD;
+    font-size: 30px;
+    border-radius: 15px;
+    margin: 1rem; /* Add some margin to avoid touching edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    .social-links{
+        display:flex;
+        justify-content: center;
+        color:fff;
+        gap: 4rem; /* Increase the gap between items */
+        margin: 0 auto; /* Center the social links container */
+        padding: 0; /* Remove any default padding */
+        
+
+}
+
+    }
+
+    .fa {
+        padding: 7px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0.5px 2px;
+        border-radius: 50%;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        background: #3B5998;
+        color: #F4E9CD;
+      }
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: #F4E9CD;
+      }
+      
+      .fa-instagram {
+        background: #125688;
+        color: #F4E9CD;
+      }
