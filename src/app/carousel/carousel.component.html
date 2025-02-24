@@ -1,0 +1,24 @@
+<div class="carousel">
+    <img src="Images/PizzaTower.png" alt="Pizza Tower guy" class="pizza-tower">
+
+
+    <button mat-icon-button (click)="prevSlide()">
+        <mat-icon>chevron_left</mat-icon>
+    </button>
+
+    <div class="slide-container" routerLink="/menu" routerLinkActive="router-link-active">
+        <mat-card>
+            <img mat-card-image [src]="slides[currentIndex].image" alt="{{slides[currentIndex].name}}">
+            <h3>{{slides[currentIndex].name}}</h3>
+            <p>{{slides[currentIndex].description}}</p>
+            <p class="price">{{slides[currentIndex].price}}</p>
+        </mat-card>
+    </div>
+
+    <button mat-icon-button (click)="nextSlide()">
+        <mat-icon>chevron_right</mat-icon>
+    </button>
+<h3>Order Our favorite Pizza from our <a routerLink="/menu" routerLinkActive="router-link-active">Menu</a></h3>
+<div class="pizzaGuy">
+</div>
+</div>

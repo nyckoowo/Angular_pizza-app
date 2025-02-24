@@ -1,0 +1,60 @@
+.pizza-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1rem; // Adjust font size
+    font-weight: bold;
+
+     button {
+      display: inline-block;
+      padding: 10px 20px; // Adjust padding for size
+      font-size: 1rem; // Adjust font size
+      font-weight: bold; // Make text bold
+      color: #fff; // Text color
+      background-color: #9b3633; // Button background color (red)
+      border: none; // Remove default border
+      border-radius: 5px; // Rounded corners
+      cursor: pointer; // Change cursor to pointer on hover
+      transition: background-color 0.3s ease, transform 0.2s ease; // Smooth transitions
+    
+      &:hover {
+        background-color: #c9302c; // Darker red on hover
+        transform: translateY(-2px); // Slight lift effect on hover
+      }
+    
+      &:active {
+        background-color: #ac2925; // Even darker red on click
+        transform: translateY(0); // Reset lift effect on click
+      }
+    
+      &:focus {
+        outline: none; // Remove default focus outline
+        box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.5); // Add a focus ring
+      }
+    }
+    img{
+      width: 250px;
+      height: 250px;
+    }
+    .pizza-item {
+      flex: 1 1 calc(25% - 1rem); // 4 items per row on large screens
+  
+      @media (max-width: 992px) {
+        flex: 1 1 calc(33.33% - 1rem); // 3 items per row on medium screens
+      }
+  
+      @media (max-width: 768px) {
+        flex: 1 1 calc(50% - 1rem); // 2 items per row on small screens
+      }
+  
+      @media (max-width: 576px) {
+        flex: 1 1 100%; // 1 item per row on extra small screens
+      }
+    }
+  }
+
+  .container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
