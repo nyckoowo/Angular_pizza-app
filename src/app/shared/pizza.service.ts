@@ -4,8 +4,13 @@ import { Injectable } from '@angular/core';
 @Injectable({
 
   providedIn: 'root', //this makes the service available to the entire application
-})
+}) 
+
+  let nextOrderId= 1;
+  let nextPizzaId= 1;
 export class PizzaService {
+
+ 
 
     private pizzas=[{
 
