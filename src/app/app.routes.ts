@@ -13,5 +13,5 @@ export const routes: Routes = [{
 
     },
 {
-    path: 'customize-pizza', component: CustomizePizzaComponent
+    path: 'customize-pizza/:id', component: CustomizePizzaComponent
 }];

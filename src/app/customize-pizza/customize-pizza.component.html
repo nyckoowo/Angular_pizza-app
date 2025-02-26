@@ -1,1 +1,26 @@
-<p>customize-pizza works!</p>
+<div class="customize-pizza">
+    <h2>Customize Your {{ pizza.name }}</h2>
+    <img [src]="pizza.image" [alt]="pizza.name" />
+    <p>{{ pizza.description }}</p>
+    <p>Base Price: ${{ pizza.price }}</p>
+  
+    <h3>Extra Toppings ($3 each)</h3>
+    <div *ngFor="let topping of extraToppings">
+      <label>
+        <input type="checkbox" [value]="topping" (change)="onToppingSelect(topping, $event)" />
+        {{ topping }}
+      </label>
+    </div>
+  
+    <h3>Drinks ($2 each)</h3>
+    <div *ngFor="let drink of drinks">
+      <label>
+        <input type="checkbox" [value]="drink" (change)="onDrinkSelect(drink, $event)" />
+        {{ drink }}
+      </label>
+    </div>
+  
+    <p>Final Price: ${{ finalPrice }}</p>
+  
+    <button (click)="onAddToCart()">Add to Cart</button>
+  </div>
