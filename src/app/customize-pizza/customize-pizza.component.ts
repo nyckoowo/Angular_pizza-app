@@ -2,9 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PizzaService } from '../shared/pizza.service';
 import { CartService } from '../shared/cart.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-customize-pizza',
+  imports: [CommonModule],
   templateUrl: './customize-pizza.component.html',
   styleUrl: './customize-pizza.component.scss',
 })
